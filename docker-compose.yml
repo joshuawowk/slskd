@@ -12,6 +12,7 @@ services:
       - SLSKD_REMOTE_CONFIGURATION=true
     volumes:
       - /docker/slskd/app:/app
+      - /mnt/storage_box/media:/media
     restart: always
 networks:
   npm_net:
