@@ -11,7 +11,7 @@ services:
     environment:
       - SLSKD_REMOTE_CONFIGURATION=true
     volumes:
-      - <path/to/application/data>:/app
+      - /docker/slskd/app:/app
     restart: always
 networks:
   npm_net:
